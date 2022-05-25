@@ -1,0 +1,40 @@
+.table {
+    
+    .wrapperImg {
+        display: inline-block;
+
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-left: 16px;
+            object-fit: cover;
+        }
+    }
+
+    span{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .pending {
+        color: orange;
+        background-color: rgba(255, 166, 0, 0.314);
+        padding: 10px 20px;
+        text-align: right;
+    }
+
+    .rejected {
+        color: red;
+        background-color: rgba(255, 0, 0, 0.311);
+        padding: 10px 20px;
+        text-align: right;
+    }
+
+    .fullfilment {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.315);
+        padding: 10px 20px;
+        text-align: right;
+    }
+}

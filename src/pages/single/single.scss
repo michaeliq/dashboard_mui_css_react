@@ -1,0 +1,81 @@
+.single {
+    display: flex;
+    width: 100%;
+
+    .singleContainer {
+        flex: 6;
+
+        .top {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .left {
+                flex: 1;
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                padding: 20px;
+                position: relative;
+            
+                .editButton{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px;
+                    font-size: 12px;
+                    cursor: pointer;
+                    background-color: rgba(137, 43, 226, 0.228);
+                    border-radius: 0px 0px 0px 5px;
+                }
+
+                .item {
+                    display: flex;
+                    gap: 20px;
+
+                    .itemImg {
+                        width: 80px;
+                        height: 80px;
+                        min-width: 70px;
+                        min-height: 70px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        align-self: center;
+                    }
+
+                    .details{
+                        .itemTitle{
+                            margin-bottom: 10px;
+                            color:#555;
+                        }
+                        .detailItem{
+                            .itemKey{
+                                font-weight: bold;  
+                                color: gray;
+                            }
+
+                            .itemValue{
+                                font-weight: lighter;
+                                color: rgba(85, 85, 85, 0.685);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                flex: 2;
+            }
+        }
+
+        .title{
+            font-size: 16px;
+            color:lightgray;
+            margin-bottom: 20px;
+        }
+
+        .bottom{
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 20px;
+            margin: 10px 20px;
+        }
+    }
+}
